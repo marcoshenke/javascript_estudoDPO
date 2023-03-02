@@ -42,4 +42,3 @@ console.log(biggestCard)
 
 
 
-//const maiorCarta = cartas.filter()
