@@ -1,4 +1,4 @@
-const cartas = [
+const cards = [
 { valor: 7, naipe: "espadas" },
 { valor: 10, naipe: "copas" },
 { valor: 4, naipe: "ouros" },
@@ -17,13 +17,29 @@ const cartas = [
 let firstValueCard = 0
 let biggestCard = 0
 
-for (var i = 0; i <= cartas.length - 1;  i++) {
+/*for (var i = 0; i <= cartas.length - 1;  i++) {
    
-    if (cartas[i].valor >= firstValueCard ) {
+    if (card[i].valor >= firstValueCard ) {
         firstValueCard = cartas[i].valor
         biggestCard = cartas[i]
     }   
 }
+*/
+
+cards.forEach((card) => {
+    
+    if (card.valor >= firstValueCard) {
+        firstValueCard = card.valor
+        biggestCard = card
+        
+    }   
+         
+       
+})
 
 console.log(biggestCard)
+
+
+
+
 //const maiorCarta = cartas.filter()
