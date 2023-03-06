@@ -16,7 +16,7 @@ separeteLetters.forEach((char, i) => {
         objLetters[char]++
     }
 });
-let arrayValues = Object.values(objLetters)
+let arrayValues = Object.values(objLetters) // vai pegar apenas o valor do objeto
 
 let maxValue = 0
 
@@ -26,14 +26,18 @@ arrayValues.forEach(value => {
     }
 })
 
+
+var arrayLetters = []
 //iterando sobre o objeto e encontrando as letras que mais apareceram
 for (var value in objLetters) {
-    if (objLetters[value] === maxValue) {
-        console.log(`a letra ${value} aparece ${maxValue} vezes`)
-        console.log(value + ' = ' + objLetters[value])
-    }
-}
+     if (objLetters[value] === maxValue) {
+        console.log(`a letra ${value} aparece ${maxValue} vezes`)  
 
+        arrayLetters.push([value, maxValue])
+    }
+   
+}
+console.log(arrayLetters)
 
 
 
